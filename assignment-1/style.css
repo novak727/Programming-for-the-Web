@@ -1,0 +1,25 @@
+/* Personal website stylesheet */
+
+body {
+    background-color : FloralWhite;
+    margin-left : 4em;
+    margin-right : 4em;
+}
+
+h1 {
+    text-align : center;
+    font-family : Helvetica, sans-serif;
+}
+
+hr {
+    margin-top : 1.5em;
+    margin-bottom : 1.5em;
+}
+
+.centered {
+    text-align : center;
+}
+
+#footer {
+    font-style : italic;
+}
