@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <title>The Daily Dog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dog.css">
+</head>
+<body>
+
+    <div class="page-grid">
+        <div class="header">
+            <img class="img-left" src="dog1.jpg" alt="puppy">
+            <span class="headline">The Daily Dog</span>
+            <img class="img-right" src="dog2.jpg" alt="puppy">
+            <br>
+            <q>All the news that's fit to chew</q>
+            <p>&bullet; Vol 1, Issue 19 &bullet; September 27, 2019 &bullet;
+        </div>  <!-- end of header -->
+        
+        <div class="content">
+        
+            <p class="headline">Man bites dog, dog files lawsuit</p>
+            <p>By Scooby Doo, Barkstown
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+            pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
+            diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+            malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu.
+            Ad litora torquent per conubia nostra inceptos himenaeos.
+
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+            pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
+            diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+            malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu.
+            Ad litora torquent per conubia nostra inceptos himenaeos.
+            
+        </div>  <!-- end of content -->
+        
+        <div class="sidebar">
+            <span class="headline">Sign Up Today!</span>
+            <form class="form-grid" method="POST" action="post_debugger.php">
+                <label for="petname">Dog's name: </label>
+                <input type="text" id="petname" name="petname" placeholder="Rover" required>
+                
+                <label for="gender">Dog's gender: </label>
+                <select id="gender" name="gender" size="2" required>
+                    <option selected>Male
+                    <option>Female
+                </select>
+                
+                <label for="food">Favorite food: </label>
+                <select id="food" name="food" size="3">
+                    <option selected>Beef
+                    <option>Chicken
+                    <option>Fish
+                    <option>Pork
+                    <option>Rawhide
+                    <option>Lettuce
+                    <option>Cactus
+                </select>
+                
+                <label for="age">Dog's age: </label>
+                <div>
+                    <input type="radio" value="age1" id="age" name="age" checked>between 0 and 1 years<br>
+                    <input type="radio" value="age2" name="age">between 2 and 3 years<br>
+                    <input type="radio" value="age3" name="age">between 4 and 7 years<br>
+                    <input type="radio" value="age4" name="age">older than 7 years<br>
+                </div>
+                
+                <label for="subscribe">Subscribe: </label>
+                <input type="checkbox" id="subscribe" name="subscribe" checked>
+                
+                <p>&nbsp;</p>
+                <button type="submit" onclick="return checkbox('subscribe');">Subscribe</button>
+                
+            </form>
+        </div>  <!-- end of sidebar -->
+        
+        <div class="footer">
+            <p>Copyright &copy; 2019, Dog Inc., All Rights Reserved
+        </div>  <!-- end of footer -->
+    </div>  <!-- end of page-grid -->
