@@ -52,3 +52,7 @@
     justify-items : left;
     margin : 1em;
 }
+
+.alert {
+    background-color : lime;
+}

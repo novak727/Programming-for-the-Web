@@ -2,7 +2,7 @@
 
 function textfield(field) {
     let txt = document.getElementById(field).value;
-    
+
     if (txt.length < 1)
         return field + " cannot be blank\n";
     else
@@ -11,7 +11,7 @@ function textfield(field) {
 
 function dropdown(field) {
     let ndx = document.getElementById(field).selectedIndex;
-    
+
     if (ndx == -1)
         return "No " + field + " option selected\n";
     else
@@ -19,7 +19,7 @@ function dropdown(field) {
 }
 
 function checkbox(field) {
-    let cbox = document.getElementById(field);
+    let cbox = document.getElementById(field).checked;
     
     if (cbox != null && cbox == true)
         return "";
@@ -28,14 +28,18 @@ function checkbox(field) {
 }
 
 function radioset(field) {
-    let rad = document.getElementByName(field);
-    
+    let rad = document.getElementsByName(field);
+    let numChecked = 0;
+
     for (i=0; i<rad.length; i++) {
-        if (rad[i].checked != true && rad[i].checked != false)
-            return "No " + field + " radio button selected\n"
+        if (rad[i].checked == true)
+            numChecked++;
     }
     
-    return "";
+    if (numChecked == 0)
+        return "No " + field + " radio button selected\n";
+    else
+        return "";
 }
 
 function validate() {
@@ -51,3 +55,7 @@ function validate() {
     } else
         return true;
 }
+
+
+
+
